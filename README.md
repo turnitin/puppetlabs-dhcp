@@ -55,6 +55,16 @@ Create host reservations.
       ip  => '10.0.1.51',
     }
 
+### ipxe chaining
+Boot ipxe from pxe. When configured this overrides pxefilename.
+For more information see [ipxe.org](http://ipxe.org/howto/chainloading).
+
+    class { 'dhcp':
+      ipxe_filename  => 'undionly.kpxe',
+      ipxe_bootstrap => 'bootstrap.kpxe',
+      pxe
+    }
+
 ## Contributors
 Zach Leslie <zach.leslie@gmail.com>
 Ben Hughes <git@mumble.org.uk>

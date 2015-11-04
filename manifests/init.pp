@@ -16,6 +16,8 @@ class dhcp (
   $dnskeyname          = undef,
   $pxeserver           = undef,
   $pxefilename         = undef,
+  $ipxe_filename       = undef,
+  $ipxe_bootstrap      = undef,
   $logfacility         = 'daemon',
   $default_lease_time  = 3600,
   $max_lease_time      = 86400,
